@@ -48,7 +48,7 @@ MESSAGE.attach(PART2)
 
 
 def get_page_content():
-    response = requests.get(url=TEST_URL, headers=BEST_BUY_HEADER)
+    response = requests.get(url=BEST_BUY_ITEM_URL, headers=BEST_BUY_HEADER)
     response.raise_for_status()
     return response.text
 
